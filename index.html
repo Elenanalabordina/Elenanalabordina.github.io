@@ -2,11 +2,72 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сайт-портфолио</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__container page-header__container--opened">
+        <a class="page-header__author">Елена Налабордина</a>
+      </div>
+      <nav class="main-menu main-menu--closed main-menu--nojs">
+        <button class="main-menu__toggle" type="button" name="hamburger">Открыть меню</button>
+        <div class="main-menu__wrapper">
+          <ul class="main-menu__items">
+            <li class="main-menu__item"><a class="main-menu__item-title" href="index.html">Портфолио</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Обо мне</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="form.html">Навыки</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="promo">
+        <h2 class="promo__title">Front-end разработчик</h2>
+      </section>
+      <section class="about-me">
+        <h2 class="about-me__title">Обо мне</h2>
+        <h3 class="about-me__title-education">Образование</h3>
+        <p class="about-me__education">Иркутский государственный технический университет.2005-2010. Присуждена квалификация горный инженер. Специальность инженер-геолог.</p>
+        <p class="about-me__education">HTML Academy. 2016-2017. Front-end разработчик.</p>
+      </section>
+      <section class="skills">
+        <h2 class="skills__title">Верстаю:</h2>
+        <ul class="skills__items">
+          <li class="skills__item">-Адаптивно/резиново/фиксированно</li>
+          <li class="skills__item">-Кроссбраузерно</li>
+          <li class="skills__item">-С подходом "Mobile first"</li>
+          <li class="skills__item">-По БЭМу(именование классов)</li>
+          <li class="skills__item">-Следую код-гайду</li>
+        </ul>
+        <h2 class="skills__title">Работаю с:</h2>
+        <ul class="skills__items">
+          <li class="skills__item">-HTML5</li>
+          <li class="skills__item">-CSS3</li>
+          <li class="skills__item">-LESS/SASS(CSS препроцессоры)</li>
+          <li class="skills__item">-JavaScript(на уровне подключенияи и настройки готовых скриптов)</li>
+          <li class="skills__item">-GULP(оптимизация и сборка пректа)</li>
+          <li class="skills__item">-GIT</li>
+          <li class="skills__item">-Photoshop(нарезка макета)</li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <figure class="portfolio__item">
+                        <a href="https://alekseypn.github.io/Mishka-build/index.html" class="portfolio__image">
+                            <img src="img/mishka-index.jpg" srcset="image/preview/mishka-preview@2x.jpg 2x" alt="Макет - Мишка" width="1150"
+                                height="1530">
+                        </a>
+                        <figcaption class="portfolio__desc">Макет "Мишка"</figcaption>
+                    </figure>
+        <div><a href="https://Elenanalabordina.github.io/201550-mishka/index.html"><img src="img/mishka-index.jpg" width="250" height="250"></a></div>
+        <div><a href="#"><img src="img/sedona-index.jpg" width="250" height="250"></div>
+        <div><a href="#"><img src="img/pink-index.jpg" width="250" height="250"></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__text">&copy;Елена Налабордина 2017 г.</p>
+    </footer>
   </body>
 </html>
