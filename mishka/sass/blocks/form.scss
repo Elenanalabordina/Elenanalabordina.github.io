@@ -1,0 +1,255 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 55px 30px;
+}
+.form__group {
+  margin-bottom: 30px;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+
+  &--type {
+    margin-bottom: 9px;
+  }
+
+  &--phone,
+  &--mail {
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  &--color {
+    margin-bottom: 0px;
+  }
+
+  &--info {
+    margin-bottom: 17px;
+  }
+
+  &--comment {
+    margin: 0 auto;
+    padding-bottom: 2px;
+  }
+}
+.form__group--color {
+  .form__title {
+    margin-bottom: 19px;
+  }
+}
+
+.form__title {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+  font-family: "OpenSansBold";
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #63d1bb;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    margin-left: 25px;
+    background-color: #63d1bb;
+  }
+
+  &--color {
+    margin-bottom: 22px;
+  }
+}
+
+.form__label {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.form__btn {
+  font-size: 17px;
+  @include link;
+  color: #444444;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+.form__info {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  margin: 0 auto;
+  margin-bottom: 24px
+}
+
+@media ($tablet-width) {
+  .form {
+    position: relative;
+    margin: 0 0 38px 0;
+  }
+  .form__info {
+    display: inline-block;
+    text-align: right;
+    font-size: 17px;
+    width: 668px;
+    margin: 0 auto;
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
+  .form__btn {
+    bottom: 11px;
+    left: 0;
+    width: 230px;
+    position: absolute;
+  }
+  .form__group {
+    position: relative;
+    margin-left: 0;
+  }
+
+  .form__group {
+    &--mail {
+      padding-bottom: 50px;
+      margin-bottom: 23px;
+      background-color: #f1f1f1;
+    }
+  }
+  .form__group--type {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    .form__title {
+      position: absolute;
+      top: 48px;
+      left: 1px;
+    }
+  }
+  .form__group--color {
+    margin: 0 auto;
+    width: 668px;
+    position: relative;
+
+    .form__title {
+      position: absolute;
+      top: 68px;
+      left: 2px;
+    }
+  }
+  .form__group--info {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .form__title {
+      position: absolute;
+      top: 62px;
+      left: 1px;
+    }
+  }
+  .form__group--phone {
+    .form__title {
+      position: absolute;
+      top: 66px;
+      left: 2px;
+    }
+  }
+  .form__group--mail {
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+
+    .form__title {
+      position: absolute;
+      top: 30px;
+      left: 2px;
+    }
+  }
+  .form__group--comment {
+    width: 668px;
+    margin: 0 auto;
+    .form__title {
+      position: absolute;
+      top: 45px;
+      left: 2px;
+    }
+  }
+  .form__wrapper-info {
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .form__title:after {
+    height: 0;
+  }
+  .form__wrapper {
+    background-color: #f1f1f1;
+  }
+  .form__wrapper-mail {
+    background-color: #f1f1f1;
+    margin-bottom: 23px;
+  }
+}
+
+@media ($desktop-width) {
+  .form__btn {
+    left: 175px;
+    bottom: 15px;
+  }
+  .form__group--type {
+    width: 1050px;
+    .form__title {
+      left: 63px;
+      position: absolute;
+    }
+  }
+  .form__group--color {
+    width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    .form__title {
+      left: 60px;
+    }
+  }
+  .form__group--info {
+    padding-top: 12px;
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+    .form__title {
+      left: 61px;
+      top: 69px;
+    }
+  }
+  .form__group--phone {
+    width: 1050px;
+    margin: 0 auto;
+    .form__title {
+      left: 63px;
+    }
+  }
+  .form__group--mail {
+    width: 1050px;
+    margin: 0 auto;
+    .form__title {
+      left: 62px;
+    }
+  }
+  .form__group--comment {
+    width: 1050px;
+    .form__title {
+      left: 62px;
+    }
+  }
+  .form__wrapper-info {
+    width: 1050px;
+  }
+  .form__info {
+    margin-left: 208px;
+  }
+  .form__wrapper-mail {
+    margin-bottom: 15px;
+  }
+}

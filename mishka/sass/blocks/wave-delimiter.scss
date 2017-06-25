@@ -1,0 +1,22 @@
+.wave-delimiter {
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-image: url("../img/wave-mobile.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+@media ($tablet-width) {
+  .wave-delimiter {
+    height: 17px;
+    background-image: url("../img/wave-tablet.png");
+  }
+}
+
+@media ($desktop-width) {
+  .wave-delimiter {
+    height: 23px;
+    background-image: url("../img/wave-desktop.png");
+  }
+}

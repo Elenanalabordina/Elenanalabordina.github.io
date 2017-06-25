@@ -1,0 +1,25 @@
+
+@media ($tablet-width) {
+  .wave {
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 24px;
+    width: 768px;
+    background-image: url("../img/wave1.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    width: 100%;
+  }
+}
+
+@media ($desktop-width) {
+  .wave {
+    height: 34px;
+    background-image: url("../img/wave2.png");
+    width: 100%;
+    position: absolute;
+    bottom: -18px;
+  }
+}

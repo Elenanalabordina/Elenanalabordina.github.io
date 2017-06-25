@@ -1,0 +1,41 @@
+.form__group--comment textarea {
+  width: 230px;
+  height: 113px;
+  margin-top: 23px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 0 2px #000000;
+  font-family: "OpenSansRegular";
+  font-size: 17px;
+  line-height: 18px;
+
+  &:hover {
+    box-shadow: inset 0 0 0 2px #63d1bb;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px #63d1bb;
+  }
+}
+
+@media ($tablet-width) {
+  .form-comment {
+    margin-left: 168px;
+  }
+  .form__group--comment textarea {
+    width: 471px;
+    height: 111px;
+    font-size: 19px;
+  }
+}
+
+@media ($desktop-width) {
+  .form-comment {
+    margin-left: 175px;
+  }
+  .form__group--comment textarea {
+    width: 671px;
+    height: 112px;
+  }
+}

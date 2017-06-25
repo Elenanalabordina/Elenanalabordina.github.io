@@ -1,0 +1,126 @@
+.catalog-nav {
+  position: relative;
+  margin-top: -72px;
+}
+.catalog-nav__item--interior {
+  background: #63d1bb;
+
+  &:hover {
+    background: #59d5bc;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+
+    &:after {
+      opacity: 0.7;
+      transition-duration: 0.2s;
+    }
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+
+    &:after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-nav__item--toys {
+  background: #56c3b2;
+
+  &:hover {
+    background: #59d5bc;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+
+    &:after {
+      opacity: 0.7;
+      transition-duration: 0.2s;
+    }
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+
+    &:after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-nav__item--interior,
+.catalog-nav__item--toys {
+  padding-right: 90px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+  }
+}
+
+.catalog-nav__item--interior:after {
+  width: 41px;
+  height: 62px;
+  right: 36px;
+  top: 23px;
+  background: url("../img/icon-interior.svg") no-repeat;
+}
+
+.catalog-nav__item--toys:after {
+  width: 60px;
+  height: 60px;
+  right: 26px;
+  top: 20px;
+  background: url("../img/icon-toy.svg") no-repeat;
+}
+.catalog-nav__item {
+  display: block;
+  position: relative;
+  padding: 25px 145px 29px 30px;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color:  #ffffff;
+  font-family: "OpenSansBold";
+}
+
+@media ($tablet-width) {
+  .catalog-nav {
+    position: relative;
+    margin-top: 183px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 668px;
+    margin-top: 197px;
+  }
+
+  .catalog-nav__item {
+    width: 334px;
+    padding: 29px 114px 40px 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog-nav__item--toys:after {
+    right: 33px;
+    top: 30px;
+  }
+  .catalog-nav__item--interior:after {
+    top: 29px;
+  }
+}
+
+@media ($desktop-width) {
+  .catalog-nav {
+    width: 1050px;
+    margin-top: 184px;
+  }
+
+  .catalog-nav__item {
+    width: 525px;
+    padding: 29px 303px 46px 37px;
+  }
+}

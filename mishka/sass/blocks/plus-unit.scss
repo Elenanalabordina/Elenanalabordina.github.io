@@ -1,0 +1,228 @@
+.plus-unit {
+  @include container;
+  margin-top: 27px;
+  margin-bottom: 56px;
+}
+.plus-unit__title {
+  font-size: 25px;
+  font-family: "OpenSansBold";
+  font-weight: bold;
+  color: #000000;
+}
+.plus-unit__items {
+  @include list;
+}
+.plus-unit__item {
+  p {
+    color: #000000;
+    font-size: 17px;
+    font-family: "OpenSansBold";
+    font-weight: bold;
+    line-height: 20px;
+    position: relative;
+    padding: 65px 0 1px 0;
+  }
+  svg {
+  position: absolute;
+  fill: #63d1bb;
+}
+
+  &--materials {
+    svg {
+      top: 10px;
+      left: 9px;
+    }
+  }
+
+  &--style {
+    svg {
+      top: 11px;
+      left: 1px;
+    }
+  }
+
+  &--like {
+    svg {
+      top: 16px;
+      left: 7px;
+    }
+  }
+
+  &--ball {
+    svg {
+      top: 13px;
+      left: 4px;
+    }
+  }
+
+  &--rocket {
+    svg {
+      top: 14px;
+      left: -5px;
+    }
+  }
+
+  &--gift {
+    svg {
+      top: 12px;
+      left: 4px;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .plus-unit {
+    margin-bottom: 16px;
+    margin-top: 60px;
+  }
+  .plus-unit__title {
+    font-size: 43px;
+  }
+  .plus-unit__items {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .plus-unit__item {
+    font-size: 20px;
+    margin-bottom: 15px;
+
+  &--materials {
+    order: 0;
+    width: 334px;
+    svg {
+      top: 0px;
+      left: 9px;
+    }
+  }
+
+  &--style {
+    order: 2;
+    width: 334px;
+    svg {
+      top: 2px;
+      left: 1px;
+    }
+  }
+
+  &--like {
+    order: 4;
+    width: 334px;
+    svg {
+      top: 7px;
+      left: 7px;
+    }
+  }
+
+  &--ball {
+    order: 1;
+    width: 250px;
+    svg {
+      top: 4px;
+      left: 4px;
+    }
+  }
+
+  &--rocket {
+    order: 3;
+    width: 293px;
+    svg {
+      top: 4px;
+      left: -5px;
+    }
+  }
+
+  &--gift {
+    order: 5;
+    width: 250px;
+    svg {
+      top: 2px;
+      left: 4px;
+    }
+  }
+}
+
+  .plus-unit__item p {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 56px 0 0px 0;
+  }
+}
+
+@media ($desktop-width) {
+  .plus-unit__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 56px;
+    margin-bottom: 50px;
+  }
+  .plus-unit {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+  .plus-unit__item--materials,
+  .plus-unit__item--style,
+  .plus-unit__item--like{
+    width: 348px;
+  }
+  .plus-unit__item {
+    padding-top: 0;
+    margin-bottom: 36px;
+
+    &--materials {
+
+      svg {
+        top: -18px;
+        left: 9px;
+      }
+    }
+
+    &--style {
+
+      svg {
+        top: -18px;
+        left: 1px;
+      }
+    }
+
+    &--like {
+
+      svg {
+        top: -13px;
+        left: 7px;
+      }
+    }
+
+    &--ball {
+
+      svg {
+        top: -16px;
+        left: 4px;
+      }
+    }
+
+    &--rocket {
+
+      svg {
+        top: -16px;
+        left: -5px;
+      }
+    }
+
+    &--gift {
+
+      svg {
+        top: -18px;
+        left: 4px;
+      }
+    }
+  }
+
+  .plus-unit__item p {
+    padding: 35px 0 0 0;
+  }
+}

@@ -1,0 +1,108 @@
+.form-color__label {
+  position: relative;
+  display: block;
+  margin-bottom: 22px;
+  padding: 11px 10px 10px 65px;
+  font-family: "OpenSansBold";
+  font-size: 17px;
+  line-height: 18px;
+  width: 200px;
+}
+
+.form-color__input {
+  display: none;
+}
+
+.form-color__icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 0;
+  z-index: 1;
+  width: 39px;
+  height: 39px;
+  box-shadow: inset 0 0 0 2px;
+  color: #444444;
+
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form-color__input:checked + .form-color__icon:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  width: 20px;
+  height: 10px;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  transform: rotate(-45deg);
+}
+
+@media ($tablet-width) {
+  .form-color {
+    margin-left: 170px;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+  }
+
+  .form-color__label {
+    height: 50px;
+    width: 108px;
+    padding: 25px 74px 3px 80px;
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+  .form-color__label:nth-child(even) {
+    padding-right: 0;
+  }
+  .form-color__icon{
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+
+  .orform-color__input:checked + .form-color__icon:before {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 15px;
+  }
+  .form-color__input:checked+.form-color__icon:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    z-index: 2;
+    width: 27px;
+    height: 11px;
+  }
+}
+
+@media ($desktop-width) {
+  .form-color {
+    margin-left: 172px;
+    margin-bottom: 29px;
+  }
+
+  .form-color__label {
+    width: 112px;
+    padding-left: 78px;
+    padding-top: 27px;
+  }
+  .form-color__label:nth-child(even) {
+    padding-right: 78px;
+  }
+  .form-color {
+    margin-left: 175px;
+  }
+}

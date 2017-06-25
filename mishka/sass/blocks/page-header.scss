@@ -1,0 +1,53 @@
+.page-header {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-header__logo {
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.page-header__logo[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media ($tablet-width) {
+  .page-header {
+    width: 768px;
+    min-height: 88px;
+    margin: 0 auto;
+    border-top: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    height: 88px;
+    left: 50px;
+    margin: 0;
+  }
+}
+@media ($desktop-width) {
+  .page-header {
+    width: 1150px;
+    min-height: 88px;
+    margin: 0 auto;
+    border-top: none;
+  }
+  .page-header__logo {
+    left: 50%;
+    margin-left: -75px;
+    top: -11px;
+  }
+}
