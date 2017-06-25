@@ -1,0 +1,90 @@
+.wrapper__title {
+  @include font-family;
+  font-weight: 300;
+  font-size: 24px;
+  color: $white;
+  text-align: center;
+  @include container;
+  padding-top: 96px;
+  padding-bottom: 81px;
+}
+.wrapper__title--form {
+  padding-bottom: 51px;
+}
+.wrapper--form {
+  margin-bottom: 46px;
+}
+.wrapper {
+  width: 100%;
+  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -9px;
+  background-color: $dark-blue;
+}
+@media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .wrapper {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-size: 699px 453px;
+    background-color: #283645;
+    margin-top: -66px;
+    background-position: center 0px;
+  }
+}
+
+@media ($tablet-width) {
+  .wrapper__title {
+    font-size: 50px;
+    line-height: 59px;
+    padding-top: 136px;
+  }
+  .wrapper {
+    position: relative;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    background-position: center;
+    background-color: $dark-blue;
+    margin-top: -150px;
+  }
+  @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .wrapper {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background-size: 1202px 723px;
+      background-position-y: -44px;
+      background-position-x: center;
+      background-color:  $dark-blue;
+      height: 392px;
+    }
+  }
+  .wrapper--form {
+    margin-bottom: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .wrapper__title {
+    padding-top: 213px;
+    width: 391px;
+  }
+  .wrapper__title--form {
+    width: 752px;
+  }
+  .wrapper {
+    position: relative;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    background-position: center;
+    background-color: $dark-blue;
+  }
+  @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .wrapper {
+      background: url("../img/bg-back-desktop@2x.jpg") 50% 0 no-repeat;
+      background-size: 2542px 871px;
+      background-position-y: 49px;
+      background-position-x: center;
+      background-color:  $dark-blue;
+      margin-top: -150px;
+      height: 432px;
+    }
+  }
+}

@@ -1,0 +1,241 @@
+.photo-tuning {
+  background-color: $gray;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.photo-tuning__wrapper {
+  @include container;
+}
+.photo-tuning__wrapper img {
+  vertical-align: bottom;
+  margin-bottom: 38px;
+}
+.photo-tuning__btn-post {
+  width: 100%;
+  border-radius: 50px;
+  border: 3px solid $pink;
+  background-color: $gray;
+  color: $pink;
+  outline: none;
+  padding: 10px 0;
+  margin-bottom: 12px;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+
+  }
+  &:active {
+    color: #e06989;
+    background-color: $pink;
+  }
+}
+.photo-tuning__btn-annulment {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid #dddfe0;
+  background-color: $gray;
+  color: #dddfe0;
+  outline: none;
+  padding: 10px 0;
+
+  &:hover {
+    color: $dark-gray;
+    border: 3px solid $dark-gray;
+
+  }
+  &:active {
+    color: #cbced2;
+    background-color: $dark-gray;
+  }
+}
+.photo-tuning__tools {
+  width: 210px;
+  height: 48px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-tuning__item-icon {
+  width: 45px;
+  height: 48px;
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+  }
+  &:active {
+    fill: $pink;
+  }
+}
+.resize-icon {
+  fill: $pink;
+}
+.photo-tuning__item-range--single {
+  width: 85%;
+  height: 10px;
+  border-bottom: 2px solid $black;
+  margin: 0 auto 30px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: 14.5%;
+    top: 3px;
+    background: $white;
+    border: 2px solid $pink;
+    border-radius: 100%;
+  }
+}
+
+.photo-tuning__divider {
+  margin-bottom: 38px;
+}
+.contrast-icon{
+  padding-top: 19px;
+}
+
+@media ($tablet-width) {
+  .photo-tuning__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    height: 437px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 36px;
+    }
+  }
+  .photo-tuning__btn-post,
+  .photo-tuning__btn-annulment {
+    width: 260px;
+    margin-right: 16px;
+  }
+  .photo-tuning__btn-post {
+    margin-bottom: 28px;
+  }
+  .photo-tuning__tools {
+    min-width: 41%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 349px;
+    margin-top: 30px;
+    margin-bottom: 222px;
+  }
+  .photo-tuning__item-range--single {
+    display: none;
+  }
+  .photo-tuning__item-range {
+    padding-top: 2px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid $black;
+    margin: 0 auto 30px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      right: 15.5%;
+      top: 3px;
+      background: $white;
+      border: 2px solid $pink;
+      border-radius: 100%;
+    }
+  }
+  .photo-tuning__item-icon .contrast-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .photo-tuning__divider {
+    display: none;
+  }
+  .photo-tuning__item {
+    width: 100%;
+    padding: 10px 0 12px;
+    border-bottom: 1px solid fade($gray, 30%);
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+  .photo-tuning {
+    padding-bottom: 53px;
+  }
+  .photo-tuning__item-range {
+    &:after {
+      top: 7px;
+    }
+  }
+  .fill-icon,
+  .contrast-icon {
+    fill: $pink;
+  }
+  .contrast-icon {
+    padding-top: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .photo-tuning__item-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .photo-tuning__item-range {
+    width: 290px;
+    margin-bottom: 10px;
+  }
+  .photo-tuning__item {
+    width: 415px;
+    padding-bottom: 19px;
+    padding-right: 30px;
+    padding-left: 13px;
+  }
+  .photo-tuning__item-icon {
+    margin-right: 50px;
+  }
+  .photo-tuning__wrap:last-child {
+    width: 600px;
+    left: 480px;
+    top: 400px;
+  }
+  .photo-tuning {
+    @include container;
+    margin-bottom: 26px;
+  }
+  .photo-tuning__wrapper img {
+    left: 80px;
+    top: 55px;
+  }
+  .photo-tuning__wrapper {
+    height: 512px;
+  }
+  .photo-tuning__tools {
+    margin-left: 454px;
+    margin-top: 43px;
+    margin-bottom: 227px;
+  }
+  .photo-tuning__wrapper {
+    position: relative;
+  }
+  .photo-tuning__btn-post {
+    position: absolute;
+    bottom: 27px;
+    right: 284px;
+    width: 184px;
+    margin-right: 0;
+  }
+  .photo-tuning__btn-annulment {
+    margin-top: 83px;
+    width: 184px;
+    margin-right: 57px;
+  }
+}

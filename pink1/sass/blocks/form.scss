@@ -1,0 +1,195 @@
+.form__title {
+  @include font-family;
+  font-weight: 400;
+  color: $pink;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 35px;
+  margin-bottom: 32px;
+  padding-top: 104px;
+}
+.form__title:last-child {
+  margin-bottom: 13px;
+}
+.form__title--info {
+  display: none;
+}
+.form__group {
+  @include container;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.form__wrapper {
+  @include container;
+}
+.form__group--achievements {
+  width: auto;
+  background-color: $gray;
+}
+.form__wrapper-info {
+  @include container;
+  padding-bottom: 1px;
+}
+.form__btn {
+  text-transform: uppercase;
+  background-color: $green;
+  color: $white;
+  border: 2px solid $green;
+  border-radius: 2px;
+  margin-bottom: 35px;
+  padding: 14px 0;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+  &:active {
+    color: #3ca975;
+    background-color: $dark-green;
+  }
+  &:disabled {
+    color: $white;
+    background-color: #e5e5e5;
+  }
+
+  &--send-modal {
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+}
+.form__info {
+  @include font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form__snow {
+  color: $pink;
+}
+.form__group--type {
+  width: auto;
+  background-color: $gray;
+  margin-bottom: -66px;
+  padding-bottom: 13px;
+}
+.form__group--info {
+  margin-bottom: -43px;
+}
+.form__group--achievements {
+  margin-bottom: 33px;
+}
+.form__group--phone {
+  margin-bottom: -25px;
+}
+.form__group--comment {
+  margin-bottom: 42px;
+  .form__title {
+    margin-bottom: 18px;
+  }
+}
+::placeholder {
+  @include font-family;
+  font-weight: 400;
+  color: black;
+}
+.form__words {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__group--type {
+    order: 1;
+    background-color: $white;
+    margin-bottom: 56px;
+    padding-bottom: 27px;
+  }
+  .form__group--phone {
+    order: 2;
+    margin-bottom: 55px;
+  }
+  .form__group--achievements {
+    order: 3;
+    background-color: $white;
+    margin-bottom: 56px;
+  }
+  .form__group--comment {
+    order: 4;
+    margin-bottom: 68px;
+    .form__title {
+      margin-bottom: 38px;
+    }
+  }
+  .form__wrapper-info {
+    order: 5;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__group {
+    border: 2px solid $light-gray;
+  }
+  .form__group--info {
+    order: 0;
+    border: none;
+    padding-left: 0;
+    margin-bottom: 4px;
+  }
+  .form__title--info {
+    display: block;
+  }
+  .form__title {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 0;
+    margin-bottom: 34px;
+  }
+  .form__btn {
+    width: 300px;
+  }
+}
+
+@media ($desktop-width) {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include container;
+    margin-bottom: -7px;
+  }
+  .form__group--info {
+    width: 470px;
+    margin: 0;
+  }
+  .form__group--type {
+    width: 435px;
+    height: 300px;
+    margin: 0;
+    margin-top: -15px;
+    padding-bottom: 0;
+  }
+  .form__wrapper {
+    width: 435px;
+  }
+  .form__wrapper--achievements {
+    width: auto;
+  }
+  .form-info__input-field {
+    width: 339px;
+  }
+  .form-info__input-field--name {
+    width: 376px;
+  }
+  .form__btn {
+    margin-bottom: 0;
+  }
+  .form__wrapper-info {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.button {
+  @include link;
+  @include font-family;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+.form-text {
+  padding-top: 32px;
+  @include container;
+  margin-bottom: 33px;
+  p {
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.form-text__tablet {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .form-text {
+    font-size: 18px;
+    padding-top: 94px;
+    margin-bottom: 71px;
+    p {
+      margin: 0 30px;
+    }
+  }
+  .form-text__tablet {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .form-text {
+    padding-top: 95px;
+    margin-bottom: 85px;
+    p {
+      margin: 0 70px;
+    }
+  }
+  .form-text__tablet {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
