@@ -1,0 +1,19 @@
+.about {
+  border: 5px solid $gray;
+  border-radius: 35px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+@media ($desktop-width) {
+  .about {
+    border: none;
+    background-color: $gray;
+  }
+  .about__title-education {
+    font-size: 40px;
+  }
+  .about__education {
+    font-size: 20px;
+  }
+}

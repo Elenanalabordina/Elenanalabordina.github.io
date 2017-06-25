@@ -1,0 +1,16 @@
+body {
+  font-size: 14px;
+  color: $black;
+  line-height: 30px;
+  font-family: 'Indie Flower',"Arial", cursive;
+  font-family: 'Roboto', "Arial", sans-serif;
+  margin: 0 auto;
+  background-color: $green;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+main {
+  @include container;
+}

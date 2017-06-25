@@ -1,0 +1,31 @@
+@mixin container {
+  padding: 0;
+  margin: 0 auto;
+  width: 260px;
+
+  @media ($tablet-width) {
+    width: 668px;
+  }
+  @media ($desktop-width) {
+    width: 1050px;
+  }
+}
+
+@mixin link {
+  text-decoration: none;
+}
+
+@mixin list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}

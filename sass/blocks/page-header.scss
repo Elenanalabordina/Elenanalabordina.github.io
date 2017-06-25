@@ -1,0 +1,46 @@
+.page-header {
+  @include container;
+}
+.page-header__author {
+  font-family: 'Indie Flower', cursive;
+  padding-top: 18px;
+  color: $gray;
+  font-size: 25px;
+  text-align: center;
+}
+.page-header__author-profession {
+  color: $gray;
+  text-align: center;
+}
+.page-header__container {
+  min-height: 68px;
+  margin-bottom: 30px;
+}
+
+@media ($tablet-width) {
+
+  .page-header__container {
+    position: relative;
+    z-index: 40;
+    height: 110px;
+  }
+}
+
+@media ($desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: center;
+    background-color: #1d2631;
+    opacity: 0.6;
+    z-index: 50;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .page-header__author {
+    padding-top: 0;
+    margin-bottom: -10px;
+  }
+  .page-header__author-profession {
+    line-height: 20px;
+  }
+}

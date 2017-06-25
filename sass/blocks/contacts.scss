@@ -1,0 +1,96 @@
+.contacts__text {
+  font-size: 0;
+  position: relative;
+
+  &--phone {
+    position: absolute;
+    background: url(../img/icon-phone.svg) no-repeat;
+    top: 0px;
+    left: 25px;
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+  }
+  &--mail {
+    position: absolute;
+    background: url(../img/icon-mail.svg) no-repeat;
+    top: 50px;
+    left: 2px;
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+  }
+  &--skype {
+    position: absolute;
+    background: url(../img/icon-skype.svg) no-repeat;
+    top: 100px;
+    left: 18px;
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+  }
+}
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.contacts__phone,
+.contacts__mail,
+.contacts__skype {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media ($tablet-width) {
+  .contacts {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contacts__text {
+    font-size: 0;
+    position: relative;
+
+    &--phone {
+      top: 0px;
+      left: 7px;
+    }
+    &--mail {
+      top: 0px;
+      left: 6px;
+    }
+    &--skype {
+      top: 0px;
+      left: 8px;
+    }
+  }
+  .contacts__phone,
+  .contacts__mail,
+  .contacts__skype {
+    font-size: 18px;
+  }
+}
+
+@media ($desktop-width) {
+  .contacts__text {
+    font-size: 0;
+    position: relative;
+
+    &--phone {
+      top: 0px;
+      left: 58px;
+    }
+    &--mail {
+      top: 0px;
+      left: 58px;
+    }
+    &--skype {
+      top: 0px;
+      left: 58px;
+    }
+  }
+}

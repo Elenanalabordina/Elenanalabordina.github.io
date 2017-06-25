@@ -1,0 +1,36 @@
+.page-footer__wrapper {
+  @include container;
+  margin-top: 38px;
+}
+.page-footer__text {
+  text-align: center;
+}
+.page-footer__title {
+  text-align: center;
+}
+
+@media ($tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 37px;
+  }
+  .page-footer__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media ($desktop-width) {
+  .page-footer {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .page-footer__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .page-footer__text {
+    font-size: 18px;
+  }
+}

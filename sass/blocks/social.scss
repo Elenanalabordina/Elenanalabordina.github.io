@@ -1,0 +1,16 @@
+.social {
+  text-align: center;
+}
+.social__link {
+  fill: $white;
+  font-size: 0;
+  margin-right: 10px;
+
+  &:hover {
+    fill: $black;
+  }
+  &:active {
+    fill: $green;
+    opacity: 0.6;
+  }
+}
