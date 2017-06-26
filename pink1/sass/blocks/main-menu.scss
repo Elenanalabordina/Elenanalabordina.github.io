@@ -42,7 +42,6 @@
   position: absolute;
   top: -48px;
   right: 20px;
-  z-index: 45;
   display: block;
   width: 54px;
   height: 25px;
@@ -55,6 +54,7 @@
 .main-menu--closed .main-menu__toggle::before {
   content: "";
   position: absolute;
+  z-index: 65;
   top: 4px;
   left: 0;
 
@@ -82,6 +82,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 65;
     top: 12px;
     left: 30px;
     width: 30px;
